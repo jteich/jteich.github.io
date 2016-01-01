@@ -39,10 +39,12 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      permalink: /:categories/:year/:month/:day/:title/ #pretty
   -
     scope:
       path: "_posts/old"
       type: "posts"
     values:
       layout: "post"
-      permalink: /old-blog/:year/:month/:title/
+      #permalink: /old-blog/:year/:month/:title/
+      category: "old-blog"

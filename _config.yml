@@ -7,15 +7,42 @@
 
 # Site settings
 title: Mindblurb - Technical Explorations
-email: your-email@domain.com
+#email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
     Notes on various technical things including software, hardware and electronics
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://www.mindblurb.com" # the base hostname & protocol for your site
+#twitter_username: jekyllrb
+#github_username:  jekyll
 
+host: 0.0.0.0
+port: 4000
 source: ./_src
 
 # Build settings
 markdown: kramdown
+
+gems:
+  - jekyll-redirect-from
+
+permalink: pretty
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: "_posts/old"
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: /old-blog/:year/:month/:title/

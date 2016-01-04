@@ -26,8 +26,6 @@ gems:
   - jekyll-redirect-from
 
 permalink: pretty
-exclude: 
-  - "sample_site"
 
 defaults:
   -

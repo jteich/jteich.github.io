@@ -1,4 +1,4 @@
 ---
 layout: default
 ---
-Hello World
+[My blog](/blog/)

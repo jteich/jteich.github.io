@@ -18,7 +18,6 @@ keep: ".git"
 
 host: 0.0.0.0
 port: 4000
-source: ./_src
 
 # Build settings
 markdown: kramdown
@@ -27,6 +26,7 @@ gems:
   - jekyll-redirect-from
 
 permalink: pretty
+exclude: [ "sample_site" ]
 
 defaults:
   -

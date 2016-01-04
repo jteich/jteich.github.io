@@ -42,7 +42,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      permalink: /:categories/:year/:month/:day/:title/ #pretty
+      #permalink: /:categories/:year/:month/:day/:title/ #pretty
   -
     scope:
       path: "_posts/old"

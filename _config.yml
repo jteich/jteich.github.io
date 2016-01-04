@@ -25,6 +25,9 @@ markdown: kramdown
 gems:
   - jekyll-redirect-from
 
+whitelist:
+  - jekyll-redirect-from
+
 permalink: pretty
 
 defaults:

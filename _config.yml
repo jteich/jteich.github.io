@@ -13,7 +13,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.mindblurb.com" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
-#github_username:  jekyll
+github_username:  jteich
 keep: ".git"
 
 host: 0.0.0.0
@@ -38,7 +38,7 @@ defaults:
       layout: "default"
   -
     scope:
-      path: ""
+      path: "_posts"
       type: "posts"
     values:
       layout: "post"
